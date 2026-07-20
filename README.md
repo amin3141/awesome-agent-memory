@@ -4,7 +4,7 @@ A curated list of memory systems, frameworks, benchmarks, and research for AI ag
 
 Agents forget between sessions and between tools. "Agent memory" is the growing category of systems that decide what to keep, connect related facts, and improve recall over time. This list tracks the tools and research in that space.
 
-Contributions welcome. Please keep entries factual and free of marketing language. One tool per pull request, alphabetical within each section.
+Contributions welcome. Please keep entries factual and free of marketing language. One tool per pull request, alphabetical within each section. See [Contributing](#contributing).
 
 ## Contents
 
@@ -17,42 +17,55 @@ Contributions welcome. Please keep entries factual and free of marketing languag
 
 ## Managed memory APIs and services
 
-- [Mem0](https://github.com/mem0ai/mem0) - Open-source memory layer plus a managed cloud, with many framework integrations.
+- [Mem0](https://github.com/mem0ai/mem0) - Open-source (Apache-2.0) memory layer that extracts facts from conversations, plus a managed cloud, with many framework integrations.
 - [Mnemoverse](https://github.com/mnemoverse/mcp-memory-server) - Persistent memory API for AI agents over MCP. Scores importance on write, strengthens associations between concepts (Hebbian), and re-ranks recall from outcome feedback. MIT client, managed engine.
-- [Supermemory](https://github.com/supermemoryai/supermemory) - Memory API and "second brain" for AI apps and agents.
-- [Zep](https://github.com/getzep/zep) - Memory platform built on a temporal knowledge graph (Graphiti), with a managed cloud.
+- [Supermemory](https://github.com/supermemoryai/supermemory) - Memory and context API for AI apps and agents, with fact extraction, user profiles, connectors, and hybrid vector-plus-keyword retrieval.
+- [Zep](https://www.getzep.com/) - Managed memory service built on a temporal knowledge graph (open-source Graphiti engine), offered as cloud, BYOK, and self-hosted deployments.
 
 ## Open-source frameworks and engines
 
-- [Cognee](https://github.com/topoteretes/cognee) - Memory platform that turns your data into a knowledge graph via an extract-cognify-load pipeline.
-- [Graphiti](https://github.com/getzep/graphiti) - Temporal knowledge-graph engine for agent memory (powers Zep).
-- [LangMem](https://github.com/langchain-ai/langmem) - Long-term memory utilities for LangGraph agents.
-- [Letta](https://github.com/letta-ai/letta) - Agent framework with self-editing memory, from the team behind MemGPT.
-- [Memori](https://github.com/MemoriLabs/Memori) - Memory engine for AI agents and applications.
+- [Cognee](https://github.com/topoteretes/cognee) - Apache-2.0 memory framework that builds a self-hosted knowledge graph via an extract-cognify-load pipeline combining vector and graph retrieval.
+- [Graphiti](https://github.com/getzep/graphiti) - Apache-2.0 engine building real-time, bi-temporal knowledge graphs from conversational and structured data, with hybrid semantic, keyword, and graph retrieval (powers Zep).
+- [LangMem](https://github.com/langchain-ai/langmem) - MIT SDK giving LangGraph agents long-term semantic, episodic, and procedural memory, plus a background memory manager.
+- [Letta](https://github.com/letta-ai/letta) - Apache-2.0 framework for stateful agents with self-editing core memory and vector-backed archival memory; successor to MemGPT.
+- [Memary](https://github.com/kingjulio8238/Memary) - Long-term memory framework for autonomous agents that builds a Neo4j/FalkorDB knowledge graph and tracks entities by breadth and recency.
+- [MemEngine](https://github.com/nuster1128/MemEngine) - Library unifying many published LLM-agent memory models under a common, modular, pluggable interface (RUC and Huawei Noah's Ark).
+- [Memobase](https://github.com/memodb-io/memobase) - User-profile-based long-term memory backend for LLM applications; maintains structured, evolving user profiles and event timelines across sessions.
+- [Memori](https://github.com/MemoriLabs/Memori) - Apache-2.0 agent-memory engine that stores memory in standard SQL databases (SQLite, PostgreSQL, MySQL), with an optional managed cloud.
+- [MemoryOS](https://github.com/BAI-LAB/MemoryOS) - OS-inspired hierarchical memory framework with short-, mid-, and long-term storage plus updating, retrieval, and generation modules.
+- [MemOS](https://github.com/MemTensor/MemOS) - Memory operating system for LLMs; a unified API to add, retrieve, and manage graph-structured, multi-modal long-term memory.
+- [memU](https://github.com/NevaMind-AI/memU) - Apache-2.0 agent-memory framework where agents store notes as organized Markdown files, recalled via embedding-based ranked retrieval.
+- [MIRIX](https://github.com/Mirix-AI/MIRIX) - Apache-2.0 multi-agent memory system with six memory types (core, episodic, semantic, procedural, resource, knowledge vault); multimodal.
 
 ## MCP memory servers
 
 Memory servers that connect to any Model Context Protocol client (Claude, Cursor, VS Code, ChatGPT, and others).
 
+- [Basic Memory](https://github.com/basicmachines-co/basic-memory) - Local-first, AGPL-3.0 MCP server that stores agent memory as Obsidian-compatible Markdown files, building a knowledge graph agents can read and write.
 - [Mnemoverse](https://github.com/mnemoverse/mcp-memory-server) - Hosted persistent memory over MCP; one key or OAuth across MCP clients.
 - [OpenMemory](https://github.com/mem0ai/mem0) - Local-first, private MCP memory server (part of the Mem0 project).
 
 ## Benchmarks and evaluation
 
-Common suites used to evaluate agent memory (canonical links welcome via PR):
+Common suites used to evaluate agent memory.
 
-- LoCoMo - long-conversation memory.
-- LongMemEval - long-term interactive memory.
-- BEAM - large-scale memory benchmark.
+- [BEAM](https://arxiv.org/abs/2510.27246) - Long-term memory benchmark: multi-turn conversations up to 10M tokens, 2,000 questions across ten memory abilities (ICLR 2026).
+- [LoCoMo](https://snap-research.github.io/locomo/) - Very long-term multi-session dialogue benchmark (~300 turns, up to 35 sessions), evaluated via QA, event summarization, and multimodal dialogue generation (ACL 2024).
+- [LongMemEval](https://xiaowu0162.github.io/long-mem-eval/) - 500-question benchmark testing five long-term memory abilities of chat assistants over scalable chat histories (ICLR 2025).
 
 ## Papers
 
-- [SLoD: Semantic Level of Detail for Knowledge Graphs](https://arxiv.org/abs/2603.08965) - Discovering abstraction boundaries via spectral heat diffusion (Mnemoverse).
+- [A-MEM: Agentic Memory for LLM Agents](https://arxiv.org/abs/2502.12110) - Organizes agent notes via Zettelkasten-style linking and evolution for dynamic retrieval (NeurIPS 2025).
+- [Generative Agents: Interactive Simulacra of Human Behavior](https://arxiv.org/abs/2304.03442) - Introduces a memory stream with reflection and retrieval to simulate believable behavior (UIST 2023).
+- [HippoRAG: Neurobiologically Inspired Long-Term Memory for LLMs](https://arxiv.org/abs/2405.14831) - Combines knowledge graphs with Personalized PageRank, inspired by hippocampal indexing, for long-term retrieval (NeurIPS 2024).
 - [MemGPT: Towards LLMs as Operating Systems](https://arxiv.org/abs/2310.08560) - Virtual context management (the origin of Letta).
+- [MemoryBank: Enhancing LLMs with Long-Term Memory](https://arxiv.org/abs/2305.10250) - Long-term memory via an Ebbinghaus-inspired forgetting curve and event summarization (2023).
+- [SLoD: Semantic Level of Detail for Knowledge Graphs](https://arxiv.org/abs/2603.08965) - Discovering abstraction boundaries via spectral heat diffusion over hyperbolic embeddings (Mnemoverse).
+- [Zep: A Temporal Knowledge Graph Architecture for Agent Memory](https://arxiv.org/abs/2501.13956) - Describes the Graphiti temporal knowledge-graph engine for agent memory, with retrieval-benchmark evaluation (2025).
 
 ## Contributing
 
-Open a pull request adding one tool, in the right section, in alphabetical order, with a short factual description (no marketing language). New sections are welcome if a genuine category is missing.
+Open a pull request adding one tool, in the right section, in alphabetical order, with a short factual description (no marketing language). New sections are welcome if a genuine category is missing. See [CONTRIBUTING.md](CONTRIBUTING.md) for the full guidelines.
 
 ## License
 
