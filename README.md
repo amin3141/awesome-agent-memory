@@ -18,7 +18,7 @@ Contributions welcome. Please keep entries factual and free of marketing languag
 ## Managed memory APIs and services
 
 - [Mem0](https://github.com/mem0ai/mem0) - Open-source (Apache-2.0) memory layer that extracts facts from conversations, plus a managed cloud, with many framework integrations.
-- [Mnemoverse](https://github.com/mnemoverse/mcp-memory-server) - Persistent memory API for AI agents over MCP. Scores importance on write, strengthens associations between concepts (Hebbian), and re-ranks recall from outcome feedback. MIT client, managed engine.
+- [Mnemoverse](https://mnemoverse.com) - Persistent memory API for AI agents over MCP. Scores importance on write, strengthens associations between concepts (Hebbian), and re-ranks recall from outcome feedback. MIT client, managed engine.
 - [Supermemory](https://github.com/supermemoryai/supermemory) - Memory and context API for AI apps and agents, with fact extraction, user profiles, connectors, and hybrid vector-plus-keyword retrieval.
 - [Zep](https://www.getzep.com/) - Managed memory service built on a temporal knowledge graph (open-source Graphiti engine), offered as cloud, BYOK, and self-hosted deployments.
 
@@ -43,7 +43,7 @@ Memory servers that connect to any Model Context Protocol client (Claude, Cursor
 
 - [Basic Memory](https://github.com/basicmachines-co/basic-memory) - Local-first, AGPL-3.0 MCP server that stores agent memory as Obsidian-compatible Markdown files, building a knowledge graph agents can read and write.
 - [Mnemoverse](https://github.com/mnemoverse/mcp-memory-server) - Hosted persistent memory over MCP; one key or OAuth across MCP clients.
-- [OpenMemory](https://github.com/mem0ai/mem0) - Local-first, private MCP memory server (part of the Mem0 project).
+- [OpenMemory](https://github.com/mem0ai/mem0/tree/main/openmemory) - Local-first, private MCP memory server (part of the Mem0 project).
 
 ## Benchmarks and evaluation
 
