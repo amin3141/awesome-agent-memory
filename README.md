@@ -26,6 +26,7 @@ Contributions welcome. Please keep entries factual and free of marketing languag
 
 - [Cognee](https://github.com/topoteretes/cognee) - Apache-2.0 memory framework that builds a self-hosted knowledge graph via an extract-cognify-load pipeline combining vector and graph retrieval.
 - [Graphiti](https://github.com/getzep/graphiti) - Apache-2.0 engine building real-time, bi-temporal knowledge graphs from conversational and structured data, with hybrid semantic, keyword, and graph retrieval (powers Zep).
+- [Hindsight](https://github.com/vectorize-io/hindsight) - MIT agent-memory system running four parallel retrieval strategies per query: semantic search, BM25 keyword matching, graph traversal, and temporal reasoning.
 - [LangMem](https://github.com/langchain-ai/langmem) - MIT SDK giving LangGraph agents long-term semantic, episodic, and procedural memory, plus a background memory manager.
 - [Letta](https://github.com/letta-ai/letta) - Apache-2.0 framework for stateful agents with self-editing core memory and vector-backed archival memory; successor to MemGPT.
 - [Memary](https://github.com/kingjulio8238/Memary) - Long-term memory framework for autonomous agents that builds a Neo4j/FalkorDB knowledge graph and tracks entities by breadth and recency.
