@@ -52,6 +52,7 @@ Memory servers that connect to any Model Context Protocol client (Claude, Cursor
 
 Common suites used to evaluate agent memory.
 
+- [agent-memory-bench](https://github.com/GiulioDER/agent-memory-bench) - Apache-2.0 execution-graded benchmark for coding-agent memory, with a retrieval-only official run and separate optional lifecycle probes.
 - [BEAM](https://arxiv.org/abs/2510.27246) - Long-term memory benchmark: multi-turn conversations up to 10M tokens, 2,000 questions across ten memory abilities (ICLR 2026).
 - [LoCoMo](https://snap-research.github.io/locomo/) - Very long-term multi-session dialogue benchmark (~300 turns, up to 35 sessions), evaluated via QA, event summarization, and multimodal dialogue generation (ACL 2024).
 - [LongMemEval](https://xiaowu0162.github.io/long-mem-eval/) - 500-question benchmark testing five long-term memory abilities of chat assistants over scalable chat histories (ICLR 2025).
